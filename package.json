@@ -1,0 +1,13 @@
+{
+  "name": "notebook-chatbot",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently -n FRONTEND,BACKEND -c blue,green \"npm run dev --prefix notebook-chatbot-frontend\" \"npm run dev --prefix notebook-chatbot-backend\"",
+    "frontend": "npm run dev --prefix notebook-chatbot-frontend",
+    "backend": "npm run dev --prefix notebook-chatbot-backend"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.0"
+  }
+}
